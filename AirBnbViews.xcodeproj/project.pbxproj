@@ -16,6 +16,7 @@
 		F3376441294874C700DD3E8B /* AirBnbContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3376440294874C700DD3E8B /* AirBnbContainerView.swift */; };
 		F33764432948D49700DD3E8B /* AirBnbRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33764422948D49700DD3E8B /* AirBnbRatingView.swift */; };
 		F337644529492F1D00DD3E8B /* VillaInfoContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F337644429492F1D00DD3E8B /* VillaInfoContainerView.swift */; };
+		F33764472949B65600DD3E8B /* SuperHostInfoContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33764462949B65600DD3E8B /* SuperHostInfoContainerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		F3376440294874C700DD3E8B /* AirBnbContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirBnbContainerView.swift; sourceTree = SOURCE_ROOT; };
 		F33764422948D49700DD3E8B /* AirBnbRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirBnbRatingView.swift; sourceTree = SOURCE_ROOT; };
 		F337644429492F1D00DD3E8B /* VillaInfoContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VillaInfoContainerView.swift; sourceTree = "<group>"; };
+		F33764462949B65600DD3E8B /* SuperHostInfoContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHostInfoContainerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				F33764422948D49700DD3E8B /* AirBnbRatingView.swift */,
 				F3376440294874C700DD3E8B /* AirBnbContainerView.swift */,
 				F337644429492F1D00DD3E8B /* VillaInfoContainerView.swift */,
+				F33764462949B65600DD3E8B /* SuperHostInfoContainerView.swift */,
 				F3376432294873AE00DD3E8B /* Main.storyboard */,
 				F3376435294873B000DD3E8B /* Assets.xcassets */,
 				F3376437294873B000DD3E8B /* LaunchScreen.storyboard */,
@@ -152,6 +155,7 @@
 				F33764432948D49700DD3E8B /* AirBnbRatingView.swift in Sources */,
 				F3376441294874C700DD3E8B /* AirBnbContainerView.swift in Sources */,
 				F337642D294873AE00DD3E8B /* AppDelegate.swift in Sources */,
+				F33764472949B65600DD3E8B /* SuperHostInfoContainerView.swift in Sources */,
 				F337642F294873AE00DD3E8B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

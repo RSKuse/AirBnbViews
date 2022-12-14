@@ -19,6 +19,15 @@ class ViewController: UIViewController {
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
+    
+    lazy var superHostContainerView: superHostInformationView = {
+        let view = superHostInformationView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
+    
+    
      
     
 
@@ -27,6 +36,7 @@ class ViewController: UIViewController {
        
         view.addSubview(guestHouseContainerView)
         view.addSubview(villaContainerView)
+        view.addSubview(superHostContainerView)
 
         
         
@@ -39,6 +49,13 @@ class ViewController: UIViewController {
         villaContainerView.rightAnchor.constraint(equalTo: view .rightAnchor).isActive = true
         villaContainerView.topAnchor.constraint(equalTo: guestHouseContainerView.bottomAnchor, constant: 20).isActive = true
         villaContainerView.heightAnchor.constraint(equalToConstant: 80).isActive = true
+        
+        
+        superHostContainerView.leftAnchor.constraint(equalTo: view .leftAnchor).isActive = true
+        superHostContainerView.rightAnchor.constraint(equalTo: view .rightAnchor).isActive = true
+        superHostContainerView.topAnchor.constraint(equalTo: villaContainerView.bottomAnchor, constant: 20).isActive = true
+        superHostContainerView.heightAnchor.constraint(equalToConstant: 80).isActive = true
+
         
     }
 
