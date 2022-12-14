@@ -8,8 +8,8 @@
 import Foundation
 import UIKit
 
-
-class superHostInformationView: UIView {
+class SuperHostInformationView: UIView {
+    
     lazy var hostIconImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "user_icon")
@@ -40,19 +40,12 @@ class superHostInformationView: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
-    
-    
-    
-    
-    
-    
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupUIHostInfoConstraint ()
-        
     }
-    
-    
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -62,9 +55,7 @@ class superHostInformationView: UIView {
         addSubview(hostIconImageView)
         addSubview(informationTitleLabel2)
         addSubview(superHostExplainationTitleLabel)
-        
-    
-    
+
         hostIconImageView.topAnchor.constraint(equalTo: bottomAnchor, constant: 120).isActive = true
         hostIconImageView.leftAnchor.constraint(equalTo: leftAnchor, constant: 15).isActive = true
         hostIconImageView.heightAnchor.constraint(equalToConstant: 30).isActive = true

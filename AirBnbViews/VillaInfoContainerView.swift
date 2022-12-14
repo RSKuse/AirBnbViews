@@ -8,8 +8,7 @@
 import Foundation
 import UIKit
 
-
-class villaInformationView: UIView {
+class VillaInformationView: UIView {
     
     lazy var hostProfileImageView: UIImageView = {
         let imageView = UIImageView()
@@ -26,45 +25,41 @@ class villaInformationView: UIView {
         label.textColor = .black
         label.text = "Entire villa hosted by Monika"
         label.numberOfLines = 2
-        label.font = UIFont.systemFont(ofSize: 25, weight: UIFont.Weight.medium)
+        label.font = UIFont.systemFont(ofSize: 15, weight: UIFont.Weight.medium)
         label.textAlignment = .left
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
     lazy var villaDescriptionTitleLabel : UILabel = {
-        let label = UILabel()
-        label.textColor = .black
-        label.text = "2 guest・1 bedroom・1 bed 1 bedroom"
-        label.numberOfLines = 2
-        label.font = UIFont.systemFont(ofSize: 18, weight: UIFont.Weight.regular)
-        label.textAlignment = .left
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }()
+         let label = UILabel()
+         label.textColor = .black
+         label.text = "2 guest・1 bedroom・1 bed 1 bedroom"
+         label.numberOfLines = 2
+         label.font = UIFont.systemFont(ofSize: 18, weight: UIFont.Weight.regular)
+         label.textAlignment = .left
+         label.translatesAutoresizingMaskIntoConstraints = false
+         return label
+     }()
     
     lazy var separatorView2: UIView = {
-        let view = UIView()
-        view.backgroundColor = .lightGray
-        view.translatesAutoresizingMaskIntoConstraints = false
-        view.layer.borderColor = UIColor.lightGray.cgColor
-        view.layer.borderWidth = 0.5
-        view.layer.masksToBounds = true
-        return view
-        
-    }()
-    
+         let view = UIView()
+         view.backgroundColor = .lightGray
+         view.translatesAutoresizingMaskIntoConstraints = false
+         view.layer.borderColor = UIColor.lightGray.cgColor
+         view.layer.borderWidth = 0.5
+         view.layer.masksToBounds = true
+         return view
+     }()
+
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
-        setupUIVillaInfoConstraint ()
-        
+        setupUIVillaInfoConstraint()
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
     
     func setupUIVillaInfoConstraint () {
         addSubview(hostProfileImageView)
@@ -72,8 +67,8 @@ class villaInformationView: UIView {
         addSubview(villaDescriptionTitleLabel)
         addSubview(separatorView2)
         
-        
         hostProfileImageView.topAnchor.constraint(equalTo: bottomAnchor, constant: 90).isActive = true
+       
         hostProfileImageView.rightAnchor.constraint(equalTo: rightAnchor, constant: -20).isActive = true
         hostProfileImageView.heightAnchor.constraint(equalToConstant: 50).isActive = true
         hostProfileImageView.widthAnchor.constraint(equalToConstant: 50).isActive = true
@@ -81,24 +76,15 @@ class villaInformationView: UIView {
         informationTitleLabel.leftAnchor.constraint(equalTo: leftAnchor, constant: 20).isActive = true
         informationTitleLabel.centerYAnchor.constraint(equalTo: hostProfileImageView.centerYAnchor).isActive = true
         informationTitleLabel.rightAnchor.constraint(equalTo: hostProfileImageView.leftAnchor, constant: -20).isActive = true
-        
+
         villaDescriptionTitleLabel.topAnchor.constraint(equalTo: informationTitleLabel.bottomAnchor, constant: 3).isActive = true
         villaDescriptionTitleLabel.leftAnchor.constraint(equalTo: leftAnchor, constant: 20).isActive = true
         villaDescriptionTitleLabel.rightAnchor.constraint(equalTo: hostProfileImageView.leftAnchor, constant: -20).isActive = true
-        
-        
+
         separatorView2.leftAnchor.constraint(equalTo: leftAnchor, constant: 20).isActive = true
         separatorView2.topAnchor.constraint(equalTo: villaDescriptionTitleLabel.bottomAnchor, constant: 20).isActive = true
         separatorView2.rightAnchor.constraint(equalTo: rightAnchor, constant: -20).isActive = true
         separatorView2.heightAnchor.constraint(equalToConstant: 1).isActive = true
-        
-        
     }
         
-        
-        
-        
-    }
-    
-    
-
+}
